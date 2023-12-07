@@ -1,0 +1,451 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 0.225em;
+    line-height: 1em;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.35em;
+    line-height: 1.75em;
+}
+
+p {
+    margin: 0 0 2em 0;
+    color: #fff;
+    text-align: justify;
+}
+
+/* header */
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(1px);
+}
+
+#content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    padding: 20px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 30px;
+}
+
+#responsive-button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#responsive-button:hover {
+    background-color: rgba(169, 169, 169, 0.5);
+    /* Change to the desired hover color */
+    color: #fff;
+    /* Change to the desired hover text color */
+}
+
+
+/* section one */
+.wrapper.style1 {
+    background-color: #21b2a6;
+    color: #c8ece9;
+}
+
+.wrapper.style1 p {
+    color: #c8ece9;
+}
+
+section.special {
+    text-align: center;
+}
+
+.wrapper {
+    padding: 6em 0 4em 0;
+}
+
+.wrapper>.inner {
+    width: 60em;
+    margin: 0 auto;
+}
+
+.major {
+    margin: 0 0 3.5em 0;
+}
+
+.wiki {
+    background-color: #21b2a6;
+    transform: rotate(-45deg);
+    border-radius: 3px;
+    border: solid 2px rgba(0, 0, 0, 0.125);
+    display: inline-block;
+    font-size: 1.30em;
+    height: calc(3em + 2px);
+    width: calc(3em + 2px);
+}
+
+.wiki img {
+    transform: rotate(45deg);
+    filter: hue-rotate(40deg) grayscale(45%) opacity(100%);
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        padding: 3em 0;
+    }
+
+    .wrapper>.inner {
+        width: 100%;
+        padding: 0 1em;
+    }
+}
+
+/*section two */
+.wrapper.style2 {
+    background-color: #2e3842;
+    padding: 0;
+}
+
+.spotlight {
+    display: flex;
+    align-items: center;
+}
+
+.spotlight .image {
+    order: 1;
+    width: 40%;
+}
+
+.spotlight .image img {
+    border-radius: 3px;
+    width: 100%;
+}
+
+.spotlight .content {
+    padding: 2em 4em 0.1em 4em;
+    order: 2;
+    max-width: 50em;
+    width: 60%;
+}
+
+.spotlight:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.spotlight:nth-child(1) {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.spotlight:nth-child(2) {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.spotlight:nth-child(3) {
+    background-color: rgba(0, 0, 0, 0.225);
+}
+
+.spotlight:nth-child(4) {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.spotlight:nth-child(5) {
+    background-color: rgba(0, 0, 0, 0.375);
+}
+
+.spotlight:nth-child(6) {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.spotlight:nth-child(7) {
+    background-color: rgba(0, 0, 0, 0.525);
+}
+
+/* button */
+button {
+    margin-top: 1em;
+}
+
+button a {
+    display: inline-block;
+    padding: 0.25em 0.7em;
+    text-decoration: none;
+    background-color: #395886;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button a:hover {
+    background-color: #8AAEE0;
+
+}
+
+
+@media screen and (max-width: 1280px) {
+    .spotlight .image {
+        width: 45%;
+    }
+
+    .spotlight .content {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .spotlight {
+        display: block;
+    }
+
+    .spotlight br {
+        display: none;
+    }
+
+    .spotlight .image {
+        width: 100%;
+    }
+
+    .spotlight .content {
+        padding: 4em 3em 2em 3em;
+        max-width: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .spotlight .content {
+        padding: 3em 2em 2em 2em;
+    }
+}
+
+
+/* Pesan */
+.message {
+    padding-bottom: 30px;
+    background-color: #505393;
+}
+
+.message h2 {
+    padding: 30px 0 0 0px;
+    text-align: center;
+    color: #c8ece9;
+
+}
+
+#formContainer {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line */
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 100%;
+    margin: 0 5% 0 5%;
+}
+
+#pesanForm {
+    color: #c8ece9;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea,
+.button {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #4c4e89cf;
+    border-radius: 8px;
+    color: #c8ece9;
+}
+
+.button {
+    color: #f0f3fa;
+    background-color: #8aaee0;
+}
+
+.button:hover {
+    background-color: #628ecb;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#output {
+    padding: 10px;
+    color: #c8ece9;
+    background-color: #4c4e89cf;
+    border-radius: 8px;
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    /* border: #505393; */
+    resize: none;
+    overflow: auto;
+    width: 100%;
+    /* Full width on small screens */
+}
+
+/* Media Query for Responsive Layout */
+@media (min-width: 768px) {
+    #pesanForm {
+        width: 48%;
+    }
+
+    .message h2 {
+        text-align: left;
+        padding: 30px 0 15px 35px;
+    }
+
+    #output {
+        width: 48%;
+    }
+}
+
+/* footer */
+
+ul.icons li {
+    display: inline-block;
+    margin: 0 10px 40px;
+}
+
+ul.icons li:last-child {
+    margin-right: 0;
+}
+
+/* Hide the text visually but keep it for screen readers */
+ul.icons .label {
+    position: absolute;
+    left: -9999px;
+}
+
+
+#footer {
+    padding: 4em 0 4em 0;
+    background-color: #1d242a;
+    text-align: center;
+}
+
+#footer .icons {
+    font-size: 1.25em;
+}
+
+#footer .icons a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#footer .icons a:hover {
+    color: #fff;
+}
+
+#footer .copyright {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8em;
+    letter-spacing: 0.225em;
+    list-style: none;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+#footer .copyright li {
+    border-left: solid 1px rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    line-height: 1em;
+    margin-left: 1em;
+    padding-left: 1em;
+}
+
+#footer .copyright li:first-child {
+    border-left: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#footer .copyright li a {
+    color: inherit;
+}
+
+#footer .copyright li a:hover {
+    color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+
+    #footer .copyright li {
+        border: 0;
+        display: block;
+        line-height: 1.65em;
+        margin: 0;
+        padding: 0.5em 0;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+
+    #footer {
+        padding: 4em 3em 2em 3em;
+    }
+
+}
+
+@media screen and (max-width: 736px) {
+
+    #footer {
+        padding: 3em 2em 1em 2em;
+    }
+
+}
